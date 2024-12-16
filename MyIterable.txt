@@ -1,0 +1,17 @@
+Apex Class Code :
+-----------------
+public class MyIterable implements Iterable<string>
+{
+	private list<string> strings;
+    
+    public MyIterable(list<string> strings)
+    {
+        this.strings = strings;
+    }
+    
+    public Iterator<string> iterator()
+    {
+        return strings.iterator();
+    }
+}
+
